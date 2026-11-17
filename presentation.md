@@ -29,11 +29,11 @@ Ce projet automatise la collecte d’offres de Data Analyst afin de gagner du te
 
 La recherche porte sur les postes de Data Analyst à Paris. Aucun type de contrat particulier n’est imposé dans les paramètres présentés : les résultats peuvent notamment comprendre des stages et des emplois à plein temps.
 
-![Paramètres JSearch : métier, ville, pays et langue](Images/01-parametres-jsearch.png..png)
+![Paramètres JSearch : métier, ville, pays et langue](01-parametres-jsearch.png..png)
 
 *Figure 1 — Paramètres visibles : recherche « data analyst Paris », pays « fr » et langue « fr ».*
 
-![Période et nombre de pages de la recherche JSearch](Images/02-parametres-periode.png..png)
+![Période et nombre de pages de la recherche JSearch](02-parametres-periode.png..png)
 
 *Figure 2 — Offres des sept derniers jours (date_posted = week), sur une page de résultats (num_pages = 1).*
 
@@ -75,7 +75,7 @@ Le dernier module envoie une requête POST à un webhook du salon Discord. Le co
 
 Le message présente l’intitulé du poste, l’entreprise, le lieu, le type de contrat et le lien pour postuler. Une alerte est envoyée pour chaque offre ajoutée.
 
-![Scénario Make complet : HTTP JSearch, Iterator, Google Sheets et HTTP Discord](Images/03-scenario-complet.png.png)
+![Scénario Make complet : HTTP JSearch, Iterator, Google Sheets et HTTP Discord](03-scenario-complet.png.png)
 
 *Figure 3 — Les quatre modules du scénario, de la recherche JSearch au message Discord. La partie confidentielle du chemin du webhook est masquée.*
 
@@ -101,11 +101,11 @@ Le site d’origine permet d’identifier la plateforme qui publie l’offre. Le
 
 Les lignes de test ont ensuite été supprimées du tableau en conservant les en-têtes.
 
-![Tableau de suivi rempli : dix offres et colonnes de suivi personnel](Images/04-tableau-offres.png.png)
+![Tableau de suivi rempli : dix offres et colonnes de suivi personnel](04-tableau-offres.png.png)
 
 *Figure 4 — Dix offres enregistrées dans Google Sheets, avec les dates au format JJ/MM/AAAA et les colonnes de suivi personnel laissées vides.*
 
-![Alertes reçues dans le salon Discord offres_data](Images/05-alertes-discord.png..png)
+![Alertes reçues dans le salon Discord offres_data](05-alertes-discord.png..png)
 
 *Figure 5 — Alertes reçues dans le salon offres_data : intitulé, entreprise, lieu, contrat et lien pour postuler.*
 
@@ -115,7 +115,7 @@ Les lignes de test ont ensuite été supprimées du tableau en conservant les en
 
 Le scénario est configuré pour une exécution chaque lundi à 08:00, dans le fuseau Europe/Paris. Son état Active est visible sur la capture.
 
-![Planification hebdomadaire du scénario Make](Images/06-planification.png..png)
+![Planification hebdomadaire du scénario Make](06-planification.png..png)
 
 *Figure 6 — Exécution chaque lundi à 08:00, fuseau Europe/Paris ; scénario actif.*
 
